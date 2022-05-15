@@ -9,7 +9,7 @@ struct node {
     string name;
     //! Cost of node relative to the begin point
     int cost;
-    //! msp of the neighbors of this node
+    //! map of the neighbors of this node
     map <node*, int> neighbors;
     //! A sign that the node is checked
     bool checked;
