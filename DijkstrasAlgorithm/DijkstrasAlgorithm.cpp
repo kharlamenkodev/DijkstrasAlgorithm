@@ -4,7 +4,9 @@
 
 using namespace std;
 
+//! struct of node of the main graph
 struct node {
+
     //! Name of node
     string name;
     //! Cost of node relative to the begin point
