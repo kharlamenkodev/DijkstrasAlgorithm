@@ -141,5 +141,5 @@ int main()
     int result = process(graph);
 
     // display result
-    cout << "The shortest path is: " << result << endl;
+    cout << "The shortest path has a cost " << result << endl;
 }
