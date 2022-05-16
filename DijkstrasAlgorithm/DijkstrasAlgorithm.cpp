@@ -140,6 +140,24 @@ int main()
     // find the shortest path
     int result = process(graph);
 
+    // clearing allocated memory
+
+    auto i = graph.begin();
+
+    while (i != graph.end())
+    {
+        node* instance = *i;
+
+        if (instance != nullptr)
+        {
+            delete instance;
+            instance = nullptr;
+        }
+
+        i++;
+    }
+
+
     // display result
     cout << "The shortest path has a cost " << result << endl;
 }
